@@ -93,7 +93,7 @@ public class NPC_v1_16_R2 extends NPCBase {
 
         // Removing the player info after 10 seconds.
         Bukkit.getScheduler().runTaskLater(instance.getPlugin(), () ->
-                playerConnection.sendPacket(packetPlayOutPlayerInfoRemove), 200);
+                playerConnection.sendPacket(packetPlayOutPlayerInfoRemove), 60);
     }
 
     @Override
